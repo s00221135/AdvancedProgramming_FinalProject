@@ -23,7 +23,7 @@ public partial class MainWindow : Window
     [ThreadStatic]                       //per-thread static field
     private static int _threadCounter;
 
-    /* ─────────── Threads ─────────── */
+    //Threads
     private readonly BackgroundWorker bwSearch = new(); //Thread 2
     private Thread? tProducer;   //Thread 1 adds records
     private Thread? tConsumer;   //Thread 3 logs new records
